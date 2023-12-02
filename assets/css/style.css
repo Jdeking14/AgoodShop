@@ -1,0 +1,20 @@
+.navbar {
+    border-bottom: 1px solid #ccc; /* Línea debajo del navbar */
+    margin-bottom: 20px; /* Espacio para separar el contenido de abajo */
+  }
+
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 10px; /* Espacio entre enlaces */
+    float: right;
+  }

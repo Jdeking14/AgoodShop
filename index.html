@@ -1,42 +1,144 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!DOCTYPE html> 
+<html lang="es"> 
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Agoodshop</title> 
+  <link rel="stylesheet" href="assets/css/style.css" /> 
+  <script src="https://kit.fontawesome.com/d7a4525c82.js" crossorigin="anonymous"></script> 
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> 
+</head> 
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <title>agoodshop</title>
-    </head>
-    <body>
-         <!--=============== NAV ===============-->
-         
-         <nav class="navbar navbar-expand-sm navbar-light bg-light">
-           <a class="navbar-brand" href="#">agoodshop</a>
-           <div class="collapse navbar-collapse">
-             <ul class="navbar-nav ml-auto">
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Tienda</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Accesorios</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Soporte</a>
-               </li>
-             </ul>
-             <form class="form-inline my-2 my-lg-0 ml-auto">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Contactar</button>
-              </form>
-           </div>
-         </nav>
-
-
-    </body>
+<body>
+  <header class="od-header"> 
+    <div class="wrapper"> 
+      <div class="header"> 
+          <a class="navbar-brand" href="#"><strong>agoodshop</strong></a> 
+        <nav class="navbar navbar-expand-sm navbar-light"> 
+          <div class="collapse navbar-collapse"> 
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Tienda</a> 
+              </li> 
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Accesorios</a> 
+              </li> 
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Soporte</a> 
+              </li> 
+            </ul> 
+            <form class="form-inline my-2 my-lg-0 ml-auto"> 
+              <button class="btn btn-outline-success my-2 my-sm-0" id="btnContactar" type="submit">Contactar</button> 
+            </form> 
+          </div> 
+        </nav> 
+      </div> 
+    </div> 
+  </header> 
+  <main class="wrapper"> 
+    <div class="home"> 
+      <section class="sec-ifone"> 
+        <div class="img-material"> 
+          <span class="capacidad">128 GB</span> 
+          <img class="responsive" src="assets/img/iphone-15-pro.png" alt="iFhone13" /> 
+        </div> 
+        <div class="description-material"> 
+          <span class="oferta">OFERTA</span><br><br> 
+          <h1><strong>Compra un iFhone 13 Pro</strong></h1><br> 
+          <p>iFhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más avanzado. El chip que 
+            hace morder el polvo a la competencia. Un subidón de autonomía que vaya si notarás. Ceramic Shield, más duro 
+            que cualquier vidrio de smartphone. </p> 
+          <p>Pantalla Super Retina XDR de 6,1 pulgadas. Diseño robusto con bordes planos y resistente al agua.</p> 
+          </p> 
+          <div class="compra"> 
+            <span class="precio">938,99€</span> 
+            <a class="btnCompra" href="#">Comprar</a> 
+          </div> 
+          <br> 
+          <ul class="ventajas"> 
+            <li class="ventajas-item"> 
+              <p class="ventajas-p"><i class="fas fa-car-side"></i>Envío rápido, gratuito y sin contacto 
+              </p> 
+            </li> 
+            <li class="ventajas-item"> 
+              <p class="ventajas-p"><i class="fas fa-redo-alt fa-lg"></i>Devoluciones fáciles y gratuitas 
+              </p> 
+            </li> 
+            <li class="ventajas-item"> 
+              <p class="ventajas-p"><i class="fas fa-file-invoice-dollar fa-lg"></i>Posibilidad de pago a plazo</p> 
+            </li> 
+          </ul> 
+        </div> 
+      </section> 
+      <section class="sec-articulos"> 
+        <h2 class="h2-tit">Accesorios recomendados</h2> 
+        <div class="cards"> 
+          <div class="cards-item"> 
+            <img class="responsive" src="assets/img/cargador_lightning.jpg" alt="cargador-usbc" /> 
+            <div class="descripcion-producto"> 
+              <h4 class="nombre-producto">Cargador</h4> 
+              <p>El adaptador de corriente USB-C de 20 W es muy rápido y eficiente, así que va 
+                de perlas para cargar tus dispositivos en cualquier lugar.</p> 
+            </div> 
+          </div> 
+          <div class="cards-item"> 
+            <img class="responsive" src="assets/img/cargadorMagneticoInalambrico.jpg" 
+              alt="cargador_inalambrico" /> 
+            <div class="descripcion-producto"> 
+              <h4 class="nombre-producto">Base de carga inalámbrica</h4> 
+              <span class="advisor p1">Oferta</span><br><br> 
+              <p>Sistema de soporte para que sigas usando tu smartphone cómodamente 
+                mientras lo cargas. Compatible con carga rápida de 20 W.</p> 
+            </div> 
+          </div> 
+          <div class="cards-item"> 
+            <img class="responsive" src="assets/img/funda_piel.png" alt="Accesorio_funda" /> 
+            <div class="descripcion-producto"> 
+              <h4 class="nombre-producto">Funda piel</h4> 
+              <p>Fabricadas en piel europea curtida y teñida con un proceso especial, son suaves 
+                al tacto y adquieren un tono natural con el tiempo. Los botones de aluminio combinan a la perfección con 
+                el acabado de la piel.</p> 
+            </div> 
+          </div> 
+          <div class="cards-item"> 
+            <img class="responsive" src="assets/img/cargadorusbc.jpg" alt="cargador-usbc2" /> 
+            <div class="descripcion-producto"><br> 
+              <h4 class="nombre-producto">Cargador</h4> 
+              <span class="advisor p2">Nuevo</span><br><br> 
+              <p>El adaptador de corriente USB-C de 20 W es muy rápido y eficiente, así que va 
+                de perlas para cargar tus dispositivos en cualquier lugar.</p> 
+            </div> 
+          </div> 
+        </div> 
+      </section> 
+      <section class="sec-sorteo"> 
+        <div class="sorteo-description"> 
+          <h3 class="sorteo-tit">Participa en el sorteo de un iFhone 13</h3> 
+          <p>Este verano, ¡venimos cargados de premios! Así que antes de irte de vacaciones, ¡participa 
+            en nuestro sorteo! y podras llevarte un regalo increíble como un nuevo iFhone 13.</p> 
+          <p>Rellena este formulario para ser uno de los afortunados.</p> 
+        </div> 
+        <form class="form-sorteo"> 
+          <label for="name" class="form-label ">Nombre</label> 
+          <input class="form-input" type="text" placeholder="Ari Gold" /> 
+          <label for="email" class="form-label ">Email</label> 
+          <input class="form-input" type="email" placeholder="arigold@mga.com" /> 
+          <button type="submit" class="btn-form">Enviar</button> 
+        </form> 
+      </section> 
+    </div> 
+  </main> 
+  <footer> 
+    <div class="wrapper"> 
+      <div class="w-agoodshop-footer"> 
+          <b>© agoodshop</b> 
+      </div> 
+    </div> 
+  </footer> 
+</body> 
 </html>

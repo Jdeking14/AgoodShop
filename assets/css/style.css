@@ -1,20 +1,353 @@
-.navbar {
-    border-bottom: 1px solid #ccc; /* Línea debajo del navbar */
-    margin-bottom: 20px; /* Espacio para separar el contenido de abajo */
+/* Estilos generales */
+* { 
+  box-sizing: border-box !important; 
+} 
+
+/* CSS del Body */
+
+body { 
+  margin: 0; 
+} 
+
+body .wrapper { 
+  font-family: arial, verdana, sans-serif; 
+  margin: auto; 
+} 
+  
+body .btnCompra { 
+  border: solid 1px #bebebe; 
+  border-radius: 7px; 
+  padding: 7px; 
+  text-decoration: none; 
+} 
+
+body .responsive { 
+  border-radius: 7px; 
+  max-width: 100%; 
+} 
+@media (min-width: 768px) { 
+body .wrapper { 
+  max-width: 1350px; 
+} 
+}
+
+
+/* CSS del Header */
+header.od-header { 
+  border-bottom: solid 1px #bebebe; 
+} 
+ 
+header.od-header .wrapper .header { 
+  align-items: center; 
+  display: flex; 
+  justify-content: center; 
+  height: 80px; 
+  margin: 0 auto; 
+  max-width: 80%; 
+} 
+
+/* CSS del Navbar */ 
+.navbar-nav .nav-item { 
+  margin-right: 20px; 
+  background-color: none; 
+} 
+ 
+.navbar-brand { 
+  text-decoration: none; 
+  color: #3e3e3e; 
+} 
+ 
+.nav-link { 
+  font-weight: bold; 
+} 
+ 
+#btnContactar { 
+  font-weight: bold; 
+} 
+ 
+@media (min-width: 768px) { 
+  header.od-header .wrapper .header { 
+    justify-content: space-between; 
+  } 
+  header.od-header .wrapper .header .navbar { 
+    display: inline; 
+  } 
+} 
+ 
+/* CSS relativo a etiquetas dentro del body-main */
+main.wrapper .home { 
+  margin: 20px auto; 
+  max-width: 80%; 
+} 
+ 
+.h2-tit { 
+  font-weight: bold; 
+} 
+ 
+.sec-ifone { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px; 
+} 
+ 
+.img-material { 
+  position: relative; 
+  flex-basis: 60%; 
+  flex-grow: 1; 
+} 
+ 
+.capacidad { 
+  position: absolute; 
+  padding: 5px; 
+  margin: 20px; 
+  background-color: #22c55e; 
+  color: #f5f5f7; 
+} 
+ 
+.description-material { 
+  flex-basis: 60%; 
+  flex-grow: 1; 
+} 
+ 
+.oferta { 
+  font-family: system-ui, arial; 
+  font-weight: 700; 
+  color: rgb(219, 14, 14); 
+} 
+ 
+.compra { 
+  margin: 20px auto; 
+  display: flex; 
+  align-items: center; 
+  gap: 30px; 
+} 
+ 
+.precio { 
+  font-family: system-ui, arial; 
+  font-size: 1.4em; 
+  font-weight: 700; 
+} 
+ 
+.btnCompra { 
+  width: 90px; 
+  height: 42px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-decoration: none; 
+  background-color: #3b82f6; 
+  color: #f5f5f7; 
+  border: 1px solid #808080; 
+  padding: 0; 
+} 
+ 
+.btnCompra:hover { 
+  background-color: rgb(0, 39, 105); 
+  color: white; 
+} 
+ 
+/* VENTAJAS */ 
+.ventajas-p { 
+  display: block; 
+  font-size: 0.9em; 
+  margin-bottom: 5px; 
+  text-align: center; 
+} 
+ 
+main.wrapper .home .sec-ifone .description-material .ventajas { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: space-between; 
+  list-style: none; 
+  padding: 0; 
+}  
+ 
+.ventajas-item { 
+  align-items: center; 
+  box-sizing: border-box; 
+  display: flex; 
+  margin-bottom: 10px; 
+  padding: 10px; 
+  width: calc(33.33% - 10px); /* Por cada uno de los 3 elementos */
+} 
+ 
+/* SECCION RELATIVA A ARTICULOS */
+.sec-articulos { 
+  margin-top: 20px; 
+} 
+ 
+.cards { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+  margin-top: 17px; 
+} 
+ 
+.cards-item { 
+  align-items: center; 
+  border: solid 1px #bebebe; 
+  border-radius: 7px; 
+  flex-basis: 25%; 
+  padding: 10px; 
+  text-align: center; 
+} 
+ 
+.cards-item:hover { 
+  transform: scale(1.05); 
+  /* Con esto hago que las imagenes se agranden un poco al pasar el ratón por encima */
+} 
+/* Clases para la descripción del producto */
+.descripcion-producto { 
+  text-align: start; 
+} 
+ 
+.nombre-producto { 
+  font-family: system-ui, arial; 
+  margin: 15px auto 10px; 
+} 
+ 
+.advisor { 
+  border-radius:  7px; 
+  color: #f5f5f7; 
+  font-size: 13px; 
+  padding: 7px 10px; 
+} 
+ 
+.advisor.p1 { 
+  background-color: #dc2626; 
+} 
+ 
+.advisor.p2 { 
+  background-color: #3b82f6; 
+} 
+ 
+/* Sección relativa al sorteo */
+.sec-sorteo { 
+  background-color: #eff6ff; 
+  border-radius: 7px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  margin-top: 30px; 
+  padding: 20px; 
+} 
+ 
+.sorteo-description { 
+  flex-basis: 60%; 
+} 
+ 
+.sorteo-tit { 
+  font-family: system-ui, arial; 
+  font-size: 2em; 
+  font-weight: bold; 
+  margin: 0 auto; 
+} 
+ 
+/* FORMULARIO DEL SORTEO */
+.form-sorteo { 
+  flex-basis: 30%; 
+  flex-direction: column; 
+  margin-top: 20px; 
+} 
+  
+.form-input { 
+  border: solid 1px #bebebe; 
+  border-radius: 7px; 
+  height: 40px; 
+  margin-bottom: 20px; 
+  padding-left: 5px; 
+  width: 100%;  
+} 
+ 
+.btn-form { 
+  align-items: center; 
+  background-color: #3b82f6; 
+  border: 1px solid #808080; 
+  border-radius: 7px; 
+  color: #f5f5f7; 
+  display: flex; 
+  height: 42px; 
+  justify-content: center; 
+  padding: 0; 
+  text-decoration: none; 
+  width: 90px; 
+} 
+
+.btn-form:hover {
+  background-color: rgb(0, 39, 105);
+}
+/* MEDIAQUERY PARA HACER RESPONSIVE LOS ARTÍCULOS Y LOS ELEMENTOS DEL SORTEO */
+@media (min-width: 768px) {
+  main.wrapper .home {
+    margin: 50px auto;
   }
 
-  @media (max-width: 767px) {
-    .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-    }
+  main.wrapper .home .sec-articulos {
+    margin-top: 60px;
   }
 
-  .navbar-nav {
+  main.wrapper .home .sec-articulos .cards {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  main.wrapper .home .sec-sorteo {
+    background-color: #eff6ff;
+    border-radius: 7px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 35px;
   }
 
-  .navbar-nav .nav-link {
-    margin-right: 10px; /* Espacio entre enlaces */
-    float: right;
+  main.wrapper .home .sec-sorteo .sorteo-description .sorteo-tit {
+    font-family: system-ui, arial;
+    font-size: 2.6em;
+    font-weight: bold;
+    margin: 17px auto;
   }
+
+  main.wrapper .home .sec-ifone {
+    flex-direction: row;
+  }
+
+  main.wrapper .home .sec-ifone .description-material .compra {
+    margin: 30px auto auto;
+  }
+
+  main.wrapper .home .sec-ifone .description-material .compra .precio {
+    font-family: system-ui, arial;
+    font-size: 2em;
+  }
+
+  .ventajas {
+    display: flex;
+    gap: 30px;
+  }
+
+  .ventajas .ventajas-item {
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+
+  .ventajas-item i {
+    margin-right: 18px;
+  }
+}
+
+/* CSS RELATIVO AL FOOTER DE LA PÁGINA */
+footer {
+  border-top: solid 1px #bebebe;
+}
+
+footer .wrapper .w-agoodshop-footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 90%;
+  height: 80px;
+}

@@ -36,6 +36,7 @@ body .wrapper {
 header.od-header { 
   border-bottom: solid 1px #bebebe; 
 } 
+
  
 header.od-header .wrapper .header { 
   align-items: center; 
@@ -73,6 +74,23 @@ header.od-header .wrapper .header {
     display: inline; 
   } 
 } 
+
+.badge {
+  background-color: blue;
+  height: 20px;
+  width: 27px;
+  color: white;
+  border-radius: 50%;
+  padding: 0; /* Elimina el padding para ajustar el contenido al tamaño del badge */
+  font-size: 0.6em;
+  line-height: 20px; /* Ajusta el line-height para centrar verticalmente */
+  transform: scale(0.7) translateY(-45%); /* Escala el contenido para ajustarlo al tamaño del badge */
+  transform-origin: top left; /* Origen de la transformación */
+  opacity: 0.7;
+}
+
+
+
  
 /* CSS relativo a etiquetas dentro del body-main */
 main.wrapper .home { 
@@ -144,6 +162,7 @@ main.wrapper .home {
 .btnCompra:hover { 
   background-color: rgb(0, 39, 105); 
   color: white; 
+  cursor : pointer
 } 
  
 /* VENTAJAS */ 

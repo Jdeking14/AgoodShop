@@ -1,0 +1,214 @@
+/* Estilos generales */
+* { 
+  box-sizing: border-box !important; 
+} 
+
+/* CSS del Body */
+
+body { 
+  margin: 0; 
+} 
+
+body .wrapper { 
+  font-family: arial, verdana, sans-serif; 
+  margin: auto; 
+} 
+  
+body .btnCompra { 
+  border: solid 1px #bebebe; 
+  border-radius: 7px; 
+  padding: 7px; 
+  text-decoration: none; 
+} 
+
+body .responsive { 
+  border-radius: 7px; 
+  max-width: 100%; 
+} 
+@media (min-width: 768px) { 
+body .wrapper { 
+  max-width: 1350px; 
+} 
+}
+
+
+/* CSS del Header */
+header.od-header { 
+  border-bottom: solid 1px #bebebe; 
+} 
+
+ 
+header.od-header .wrapper .header { 
+  align-items: center; 
+  display: flex; 
+  justify-content: center; 
+  height: 80px; 
+  margin: 0 auto; 
+  max-width: 80%; 
+} 
+
+/* CSS del Navbar */ 
+.navbar-nav .nav-item { 
+  margin-right: 20px; 
+  background-color: none; 
+} 
+ 
+.navbar-brand { 
+  text-decoration: none; 
+  color: #3e3e3e; 
+} 
+ 
+.nav-link { 
+  font-weight: bold; 
+} 
+ 
+#btnContactar { 
+  font-weight: bold; 
+} 
+ 
+@media (min-width: 768px) { 
+  header.od-header .wrapper .header { 
+    justify-content: space-between; 
+  } 
+  header.od-header .wrapper .header .navbar { 
+    display: inline; 
+  } 
+} 
+
+
+.heading-7,
+.heading-3{
+    font-weight: 700px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.heading-7{
+    
+    border-bottom: 1px  solid #cccccc;
+    padding: 16px;
+    
+}
+
+.listaProductos,
+.total{    
+    padding: 16px;
+    
+}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.productos{
+    display: flex;
+}
+
+
+.productos__w-tabla{
+    flex-basis: 60%;
+    padding-left: 3rem;
+}
+
+
+.productos__w-total{
+    flex-basis: 40%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.btn {
+    border: none;    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.inp{    
+    
+    width: 50px;
+    height: 50px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;   
+    text-align: center; 
+    
+}
+
+.raffle__w-content{
+    background-color: #e6e4e4;    
+    line-height: 26px;
+    flex-basis: 100%;            
+}
+
+.tabla{
+    width: 100%;
+    text-align: left;
+    
+}
+
+.tabla__head{
+    border-bottom: 1px  solid #cccccc;
+    height: 0px;
+    
+}
+
+.tabla__td_producto{
+    font-weight: bold;
+}
+
+.tabla__head_tr
+.tabla__rowsRef{
+    border-bottom: 1px  solid #f0f0f0;
+    height: 50px;
+}
+
+.tabla__datoRef{
+    font-size: 12px;
+}
+
+.tabla__head_tr{
+    height: 30px;
+    
+}
+
+.container {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  flex: 1;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity button {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+}

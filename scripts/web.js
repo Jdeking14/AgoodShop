@@ -196,3 +196,19 @@ const restarCantidad = () => {
     }    
 
 }
+
+
+  // JavaScript para incrementar y decrementar el valor del span
+  let quantityElement = document.getElementById('quantityValue');
+
+  function increment() {
+    let currentValue = parseInt(quantityElement.innerHTML);
+    quantityElement.innerHTML = currentValue + 1;
+  }
+
+  function decrement() {
+    let currentValue = parseInt(quantityElement.innerHTML);
+    if (currentValue > 0) {
+      quantityElement.innerHTML = currentValue - 1;
+    }
+  }

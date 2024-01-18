@@ -5,13 +5,12 @@ class Carrito {
   
   
     constructor(productos) {
-      //this.#producto = producto;
       this.#productos = productos;
       this.#carrito = [];
       this.#cantidad = 0;
     }
   
-    anadirProductos(producto) {
+    addProductos(producto) {
       this.#carrito.push(producto);      
     }
   
